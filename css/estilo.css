@@ -3,7 +3,7 @@
 /* Criando regras usando o fluxo de trabalho MOBILE FIST-320px */
 /* OBS: As regras aqui criadas também servirão para o site como um todo, ou seja, independente do tamanho da minha tela */
 
-body{
+body {
     font-family: "ubuntu", sans-serif;
     background-image: url(../imagem/hypnotize.png);
     background-attachment: fixed;
@@ -12,29 +12,35 @@ body{
     width: 100%;
 }
 
-h1, h2, h3, h4, p, figure{
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
     margin: 0;
     padding: 0;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-#topo{
-    background-color: rgba(24,56, 29, 0.9);
+#topo {
+    background-color: rgba(24, 56, 29, 0.9);
     border-bottom: solid 1px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-h1 img{
+h1 img {
     margin-top: 25px;
     width: 200px;
 }
 
-nav{
+nav {
     min-height: 40px;
-    display: block;
+    display: none;
     text-transform: uppercase;
     font-weight: bold;
     overflow: hidden;
@@ -43,7 +49,10 @@ nav{
 
 }
 
-nav a:link, nav a:visited{
+nav a:link,
+nav a:visited,
+#iconMenu:link,
+#iconMenu:visited {
     text-decoration: none;
     color: white;
     transition: background-color 1s;
@@ -53,10 +62,119 @@ nav a:link, nav a:visited{
     align-items: center;
 }
 
-nav a:hover, nav a:focus{
+nav a:hover,
+nav a:focus,
+#iconMenu:hover,
+#iconMenu:focus {
     background-color: #A98E12;
     color: black;
     transition: background-color 1s;
     border-radius: 5%;
-    
+
+}
+
+#iconMenu {
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 40px;
+}
+
+/* Ródapé/footer */
+
+.rodape {
+    border-top: solid #06632E;
+    background-color: black;
+    color: darkgray;
+    text-align: center;
+    width: 100%;
+}
+
+/* virgula significa que tem dois seletores diferentes */
+.rodape p,
+li {
+    font-size: 16px;
+}
+
+.rodape img {
+    margin: 0 5px
+}
+
+.rodape-conteudo {
+    padding: 15px;
+    color: white;
+}
+
+.rodape-conteudo ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#logo-rodape {
+    min-width: 146px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.menu-rodape a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+.menu-rodape a:hover{
+    color: white;
+}
+
+.redes img{
+    min-width: 35px;
+    width: 35px;
+}
+
+.redes ul{
+    display: flex;
+    align-items: center;
+}
+
+.redes li{
+    width: 15%;
+    padding: 3%;
+}
+.assinatura{
+    color: white;
+    background-color: gray;
+    height: auto;
+    align-items: center;
+    padding: 1%;
+}
+
+.assinatura p{
+    margin-top: 3%;
+}
+
+/* Regras para conteudo */
+#conteudo{
+    max-width: 95%;
+    margin: auto;
+}
+
+#conteudo article{
+    background-color: white;
+    margin: 15px 0;
+    padding: 1%;
+    box-sizing: grey 1px 1px 5px;
+}
+
+#conteudo h2, #conteudoh3, #conteudo p{
+    padding: 1%;
+}
+.titulo{
+    font-size: 1.4em;
+    color: #ED6D19;
+    text-align: center;
+    text-transform: uppercase;
 }
